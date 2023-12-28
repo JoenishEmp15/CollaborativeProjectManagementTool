@@ -1,0 +1,10 @@
+<section class="real-time-updates">
+    <h2>Real-time Updates</h2>
+    <div *ngFor="let update of updates">
+      <div class="update-card">
+        <p>{{ update.message }}</p>
+        <small>{{ update.timestamp | date }}</small>
+      </div>
+    </div>
+  </section>
+  

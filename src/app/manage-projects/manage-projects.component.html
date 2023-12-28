@@ -1,0 +1,17 @@
+<!-- manage-project.compoment.html -->
+<mat-dialog-content>
+  <mat-card *ngIf="data">
+    <mat-card-header>
+      <mat-card-title>{{ data.title }}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <!-- Display dynamic item properties -->
+      <div *ngFor="let property of itemProperties">
+        <p><strong>{{ property.label }}:</strong> {{ data[property.key] }}</p>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="onClose()">Close</button>
+</mat-dialog-actions>

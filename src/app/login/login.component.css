@@ -1,0 +1,45 @@
+mat-card-title {
+  padding-bottom: 10px;
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh; /* This ensures the container takes the full height of the viewport */
+}
+
+.login-card {
+  width: 100%; /* Adjust the width as needed */
+  max-width: 300px; /* Set a maximum width to prevent the card from becoming too wide */
+}
+
+.field {
+  width: 100%;
+}
+
+.login-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.forgot-password-container{
+  margin-top: 2vh;
+}
+
+.login-button{
+  width: 25vh; /* Adjust the button width based on your preference */
+}
+
+/* Add a media query for smaller screens */
+@media screen and (max-width: 600px) {
+  .login-card {
+    max-width: 100%; /* Adjust the maximum width for smaller screens */
+  }
+
+  .login-button{
+    width: 100%; /* Make buttons full width on smaller screens */
+    margin-top: 10px; /* Add a bit of spacing between buttons on smaller screens */
+  }
+}

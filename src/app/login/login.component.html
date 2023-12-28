@@ -1,0 +1,32 @@
+<section class="login-container">
+  <mat-card class="login-card">
+    <mat-card-header>
+      <mat-card-title>Login</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form>
+        <mat-form-field class="field">
+          <input matInput type="text" placeholder="Username" required>
+        </mat-form-field>
+
+        <mat-form-field class="field">
+          <input matInput type="password" placeholder="Password" required>
+        </mat-form-field>
+
+        <div class="login-button-container">
+          <div>
+            <button class="login-button" mat-raised-button color="primary" type="submit">Login</button>
+          </div>
+          <div>
+            <button class="login-button" mat-raised-button color="secondry" type="submit" (click)="goToSignupPage()">New User?</button>
+          </div>
+        </div>
+
+        <div class="forgot-password-container">
+          <button mat-button color="accent">Forgot Password?</button>
+        </div>
+
+      </form>
+    </mat-card-content>
+  </mat-card>
+</section>
